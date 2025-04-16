@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speed Test</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>SPEEDTEST</h1>
+    </header>
+    <main>
+      <div id="speedometer">
+        <div id="gauge">
+          <div id="needle"></div>
+          <div id="center-display">
+            <div id="speed">0</div>
+            <div class="unit">Mbps</div>
+          </div>
+        </div>
+      </div>
+      <div id="results">
+        <div class="result-item">
+          <span>Download:</span>
+          <span id="download">--</span> Mbps
+        </div>
+        <div class="result-item">
+          <span>Upload:</span>
+          <span id="upload">--</span> Mbps
+        </div>
+        <div class="result-item">
+          <span>Ping:</span>
+          <span id="ping">--</span> ms
+        </div>
+      </div>
+      <button id="startTest">Start Test</button>
+      <p id="status">Click "Start Test" to begin.</p>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
